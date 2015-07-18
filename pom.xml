@@ -14,7 +14,7 @@
          <artifactId>liquibase-maven-plugin</artifactId>
          <version>3.4.0</version>
          <configuration>                  
-          <propertyFile>src/main/resources/liquibase/liquibase.properties</propertyFile>
+          <propertyFile>${liquibasePropertyFile}</propertyFile>
           <promptOnNonLocalDatabase>false</promptOnNonLocalDatabase>
          </configuration>                
          <!--executions>
@@ -41,4 +41,22 @@
       <version>1.4.187</version>
     </dependency>
   </dependencies>
+
+  <profiles>
+    <profile>
+      <id>dev</id>
+      <activation>
+        <activeByDefault>true</activeByDefault>
+      </activation>
+      <properties>
+        <liquibasePropertyFile>src/main/resources/liquibase/dev/liquibase.properties</liquibasePropertyFile>
+      </properties>
+    </profile>
+    <profile>
+      <id>prod</id>
+      <properties>
+        <liquibasePropertyFile>src/main/resources/liquibase/prod/liquibase.properties</liquibasePropertyFile>
+      </properties>
+    </profile>
+  </profiles>
 </project>
