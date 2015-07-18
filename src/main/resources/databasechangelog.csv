@@ -4,4 +4,6 @@
 "1.0_3","xyz","src/main/resources/liquibase/1.x/db.changelog-1.x.xml","2015-07-18T13:42:28.964","3","EXECUTED","7:9f1603c7e934ee213c4b2b9fa750fd3d","createIndex, createView","","","3.4.0","()",""
 "1.0_4","foobar","src/main/resources/liquibase/1.x/db.changelog-1.x.xml","2015-07-18T13:42:28.982","4","EXECUTED","7:5560655641c5ef77bca6b90c5b234724","tagDatabase","","","3.4.0","()",""
 "1","nvoxland","src/main/resources/liquibase/2.x/db.changelog-2.x.sql","2015-07-18T13:42:29.001","5","EXECUTED","7:ce862b42c856cbafdfe264917721a0e2","sql","","","3.4.0","()",""
-"2","nvoxland","src/main/resources/liquibase/2.x/db.changelog-2.x.sql","2015-07-18T13:42:29.020","6","EXECUTED","7:d0b7e49b1701f2e9a623255486c2dd73","sql",,"","3.4.0","()",""
+"2","nvoxland","src/main/resources/liquibase/2.x/db.changelog-2.x.sql","2015-07-18T13:42:29.020","6","EXECUTED","7:d0b7e49b1701f2e9a623255486c2dd73","sql","","","3.4.0","()",""
+"1","svoell","src/main/resources/liquibase/3.x/db.changelog-3.x.sql","2015-07-18T13:47:43.741","7","EXECUTED","7:0c894b59256042466cc49b7e771fea6e","sql","","","3.4.0","()",""
+"2","svoell","src/main/resources/liquibase/3.x/db.changelog-3.x.sql","2015-07-18T13:47:43.750","8","EXECUTED","7:036b98bae109746c520efd34727baf1c","sql",,"","3.4.0","()",""
