@@ -17,14 +17,14 @@
           <propertyFile>${liquibasePropertyFile}</propertyFile>
           <promptOnNonLocalDatabase>false</promptOnNonLocalDatabase>
          </configuration>                
-         <!--executions>
+         <executions>
          <execution>
            <phase>process-resources</phase>                                                                  
            <goals>
-            <goal>update</goal>
+            <goal>updateSQL</goal>
            </goals>
          </execution>
-         </executions-->
+         </executions>
       </plugin>   
     </plugins>
   </build>
