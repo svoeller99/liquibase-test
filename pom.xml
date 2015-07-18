@@ -7,14 +7,6 @@
   <version>1.0-SNAPSHOT</version>
   <name>liquibase-test</name>
   <url>http://maven.apache.org</url>
-  <dependencies>
-    <dependency>
-      <groupId>org.testng</groupId>
-      <artifactId>testng</artifactId>
-      <version>6.9.6</version>
-      <scope>test</scope>
-    </dependency>
-  </dependencies>
   <build>
     <plugins>
       <plugin>
@@ -24,15 +16,28 @@
          <configuration>                  
           <propertyFile>src/main/resources/liquibase/liquibase.properties</propertyFile>
          </configuration>                
-         <executions>
+         <!--executions>
          <execution>
            <phase>process-resources</phase>                                                                  
            <goals>
-           <goal>update</goal>
+            <goal>update</goal>
            </goals>
          </execution>
-         </executions>
+         </executions-->
       </plugin>   
     </plugins>
   </build>
+  <dependencies>
+    <dependency>
+      <groupId>org.testng</groupId>
+      <artifactId>testng</artifactId>
+      <version>6.9.6</version>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>com.h2database</groupId>
+      <artifactId>h2</artifactId>
+      <version>1.4.187</version>
+    </dependency>
+  </dependencies>
 </project>
