@@ -11,11 +11,6 @@
 
   <include file="1.x/db.changelog-1.x.xml" relativeToChangelogFile="true" />
   <include file="2.x/db.changelog-2.x.sql" relativeToChangelogFile="true" />
-  <include file="3.x/db.changelog-3.x.sql" relativeToChangelogFile="true" />
-  
-  <!--
-  <include file="2.x/db.changelog-2.x.xml" relativeToChangelogFile="true" />
-  <include file="3.x/db.changelog-3.x.xml" relativeToChangelogFile="true" />
-  ....
-  -->
+  <include file="src/main/resources/liquibase/common/3.x/db.changelog-3.x.sql" />
+
 </databaseChangeLog>
