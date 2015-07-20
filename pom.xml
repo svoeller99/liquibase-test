@@ -7,6 +7,11 @@
   <version>1.0-SNAPSHOT</version>
   <name>liquibase-test</name>
   <url>http://maven.apache.org</url>
+
+  <properties>
+    <liquibasePropertyFile>src/main/resources/liquibase/oracle/liquibase.properties</liquibasePropertyFile>
+  </properties>
+
   <build>
     <plugins>
       <plugin>
@@ -41,15 +46,6 @@
       <id>h2</id>
       <properties>
         <liquibasePropertyFile>src/main/resources/liquibase/h2/liquibase.properties</liquibasePropertyFile>
-      </properties>
-    </profile>
-    <profile>
-      <id>oracle</id>
-      <activation>
-        <activeByDefault>true</activeByDefault>
-      </activation>
-      <properties>
-        <liquibasePropertyFile>src/main/resources/liquibase/oracle/liquibase.properties</liquibasePropertyFile>
       </properties>
     </profile>
   </profiles>
