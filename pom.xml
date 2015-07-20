@@ -38,18 +38,18 @@
 
   <profiles>
     <profile>
-      <id>dev</id>
+      <id>h2</id>
       <activation>
         <activeByDefault>true</activeByDefault>
       </activation>
       <properties>
-        <liquibasePropertyFile>src/main/resources/liquibase/dev/liquibase.properties</liquibasePropertyFile>
+        <liquibasePropertyFile>src/main/resources/liquibase/h2/liquibase.properties</liquibasePropertyFile>
       </properties>
     </profile>
     <profile>
-      <id>release</id>
+      <id>oracle</id>
       <properties>
-        <liquibasePropertyFile>src/main/resources/liquibase/release/liquibase.properties</liquibasePropertyFile>
+        <liquibasePropertyFile>src/main/resources/liquibase/oracle/liquibase.properties</liquibasePropertyFile>
       </properties>
     </profile>
   </profiles>
