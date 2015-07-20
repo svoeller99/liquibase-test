@@ -39,15 +39,15 @@
   <profiles>
     <profile>
       <id>h2</id>
-      <activation>
-        <activeByDefault>true</activeByDefault>
-      </activation>
       <properties>
         <liquibasePropertyFile>src/main/resources/liquibase/h2/liquibase.properties</liquibasePropertyFile>
       </properties>
     </profile>
     <profile>
       <id>oracle</id>
+      <activation>
+        <activeByDefault>true</activeByDefault>
+      </activation>
       <properties>
         <liquibasePropertyFile>src/main/resources/liquibase/oracle/liquibase.properties</liquibasePropertyFile>
       </properties>
