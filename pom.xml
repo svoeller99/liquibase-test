@@ -47,9 +47,9 @@
       </properties>
     </profile>
     <profile>
-      <id>prod</id>
+      <id>release</id>
       <properties>
-        <liquibasePropertyFile>src/main/resources/liquibase/prod/liquibase.properties</liquibasePropertyFile>
+        <liquibasePropertyFile>src/main/resources/liquibase/release/liquibase.properties</liquibasePropertyFile>
       </properties>
     </profile>
   </profiles>
